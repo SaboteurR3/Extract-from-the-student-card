@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project_7
 {
-    class Employee : IComparable, IEquatable<Employee>
+    class Employee
     {
         private string firstName;
         private string lastName;
@@ -57,18 +57,6 @@ namespace Project_7
         {
             return "First name : " + firstName + ", last name: " + lastName + ", id: " + id
                 + ", birthYear: " + birthYear + ", age: " + age + ", salary: " + salary + ", rating: " + rating;
-        }
-        // IComparable
-        public int CompareTo(object obj)
-        {
-            Employee emp = obj as Employee;
-            return this.Age.CompareTo(emp.age);
-        }
-        // IEquatable
-        public bool Equals(Employee other)
-        {
-            Employee obj = other as Employee;
-            return this.Equals(obj);
         }
     }
 }
