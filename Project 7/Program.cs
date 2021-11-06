@@ -53,7 +53,7 @@ namespace Project_7
                         Console.WriteLine(item);
                     }
                     // Sort by Descending rating
-                    employee.Sort(new SortBySalary());
+                    employee.Sort(new DescendingOrderByRating());
                     Console.WriteLine("\n!!!!!!!!sort by Descending rating!!!!!!!!\n");
                     foreach (var item in employee)
                     {
